@@ -1,0 +1,48 @@
+.btn {
+  border: none;
+  min-width: 10rem;
+
+  &--default {
+    background-color: var(--col-primary-2);
+  }
+
+  &--success {
+    background-color: var(--col-success);
+  }
+
+  &--error {
+    background-color: var(--col-error);
+  }
+
+  &--outline {
+    background-color: transparent;
+  }
+
+  &--outline.btn--success {
+    border: 1px solid var(--col-black);
+  }
+
+  &:link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    border-radius: 1.6rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    color: var(--col-body);
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+
+  &:visited {
+    color: var(--col-body);
+  }
+}

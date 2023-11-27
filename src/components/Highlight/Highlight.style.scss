@@ -1,0 +1,37 @@
+.highlight {
+  margin-top: 12rem;
+  margin-bottom: 6rem;
+
+  &__heading {
+    font-size: 2.6rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  &__menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .highlight {
+    &__menu {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .highlight {
+    &__menu {
+      grid-template-columns: 1fr;
+    }
+  }
+}

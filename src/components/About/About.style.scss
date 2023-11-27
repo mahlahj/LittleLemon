@@ -1,0 +1,55 @@
+.about {
+  padding: 10rem 0;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  column-gap: 4rem;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__heading {
+    font-size: 3.6rem;
+
+    span {
+      display: block;
+      font-size: 2rem;
+    }
+  }
+
+  &__text {
+    max-width: 50ch;
+
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .about {
+    grid-template-columns: 1fr;
+
+    &__box {
+      &--img {
+        display: none;
+      }
+    }
+  }
+
+  .about-background {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)
+      ),
+      url('../../assets/images/mario-and-adrian.jpg');
+    background-position: 100%;
+    background-size: cover;
+  }
+}
